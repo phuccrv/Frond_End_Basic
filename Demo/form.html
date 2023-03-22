@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Demo các form
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h3>Form</h3>
+            <form action="">
+                <label for="user">Tên tài Khoản</label>
+                <br>
+                <input type="text" id="user" name="user">
+                <br>
+                <label for="Email">Email</label>
+                <br>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="fullName">Họ và Tên</label>
+                <br>
+                <input type="text" name="" id="fullName">
+                <br>
+                <label for="age">Tuổi</label>
+                <br>
+                <input type="number" name="age" id="age" min="0" max="100">
+                <br>
+                <label for="password">password</label>
+                <br>
+                <input type="password" name="password" id="password">
+                <br>
+                <label for="confirmPassword">confirm Password</label>
+                <br>
+                <input type="password" name="confirmPassword" id="">
+                <br>
+                <br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </form>
+        </section>
+        <section>
+            <fieldset>
+                <legend>ĐỒNG GIÁ 20K</legend>
+            <form action="">
+                <label for="name">Họ và tên</label>
+                <br>
+                <input type="text" name="name" id="">
+                <br>
+                <textarea name="address" id="address" rows="3" cols="15"></textarea>
+                <br>
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="xxxx-xxx-xxx">
+                <p>Sản phẩm muốn mua</p>
+                <input type="checkbox" name="coffee" id="coffee"> 
+                <label for="coffee">Cà phê</label>
+                <input type="numbe" placeholder="số lượng" max="10" min="1">
+                <br>
+                <input type="checkbox" name="Tea" id="Tea"> 
+                <label for="tea">Trà</label>
+                <input type="numbe" placeholder="số lượng" max="10" min="1">
+                <br>
+                <input type="checkbox" name="fruit" id="fruit"> 
+                <label for="fruit">Nước ép</label>
+                <input type="numbe" placeholder="số lượng" max="10" min="1">
+                <br>
+                <p>Bạn có muốn thêm đá hay không ?</p>
+                <input type="radio" name="ice">
+                <label for="yesIce">Yes</label>
+                <input type="radio" name="ice">
+                <label for="noIce">No</label>
+                <br>
+                <p>Hình thức thanh toán</p>
+                <select name="pay">
+                    <option value="cash">Tiền mặt</option>
+                    <br>
+                    <option value="Banking">Chuyển Khoản</option>
+                </select>
+                <br>
+                <input type="submit" value="Đặt hàng">
+            </form>
+            </fieldset>
+        </section>
+    </main>
+</body>
+</html>
