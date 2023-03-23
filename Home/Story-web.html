@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- forn boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Truyện</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px 200px;
+        
+    }
+    body p{
+        line-height: 30px;
+    }
+    /* phần search */
+    .search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 1px solid #a8a8a8;
+  /* border-right: none; */
+  padding: 5px;
+  height: 30px;
+  border-radius: 1px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #5b5b5b;
+}
+
+.searchButton {
+  width: 100px;
+  height: 36px;
+  border: 1px solid #484848;
+  background: #4e4e4e;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 25%;
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrap i{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+/* and search */
+header{
+    border-bottom: 1px solid #3333;
+}
+
+header img{
+    height: 50px;
+    width: 200px;
+}
+
+header i{
+    padding-left: 700px;
+    font-size: 25px;
+    color: #5b5b5b;
+    position: absolute;
+    top: 19px;
+}
+
+.login{
+    float: right;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(49, 49, 255);
+}
+header .login:hover{
+    color: coral;
+}
+
+/* menu */
+.menu{
+    display: flex;
+    border-bottom: 2px solid #ffa710;
+}
+
+.menu i{
+    font-size: 25px;
+    color: black;
+}
+
+.menu ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 112px;
+    text-transform: uppercase;
+}
+.menu ul li{
+    padding: 5px 16px 0px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* content */
+.content-list{
+    margin-top: 100px;
+}
+.content-list ul{
+    border: 1px solid #b9b9b9;
+    list-style: none;
+    display: inline-block;
+    width: 450px;
+    padding-left: 20px;
+    background-color: azure;
+    text-decoration: none;
+}
+.content-list ul li{
+    padding-top: 10px;
+}
+.content-list ul a{
+    text-decoration: none;
+}
+</style>
+<body>
+    <nav>
+        <header>
+            <a href=""><img src="./img/logo.png" alt=""></a>
+            <div class="wrap">
+                <form action="" class="search" method="post">
+                   <input type="text" class="searchTerm" placeholder="Nhập từ khoá tìm kiếm...">
+                </form>
+                <a href=""><i class='bx bx-search'></i></a>
+             </div>
+             <a href=""><i class='bx bxs-bell'></i></a>
+             <a class="login" href="#">Đăng nhập</a>
+        </header>
+    </nav>
+    <nav>
+        <div class="menu">
+            <a href=""><i class='bx bx-menu'></i></a>
+            <ul>
+                <li>lớp 1</li>
+                <li>lớp 2</li>
+                <li>lớp 3</li>
+                <li>lớp 4</li>
+                <li>lớp 5</li>
+                <li>lớp 6</li>
+                <li>lớp 7</li>
+                <li>lớp 8</li>
+                <li>lớp 9</li>
+                <li>lớp 10</li>
+                <li>lớp 11</li>
+                <li>lớp 12</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="content-list">
+        <h1>Truyện ngắn hay cho thiếu nhi</h1>
+        <ul>
+            <a href="#truyen0"><li>Sư tử và chú chuột nhắt</li></a>
+            <a href="#truyen1"> <li>Chó sói và cậu bé chăn cừu</li></a>
+            <a href="#truyen2"><li>Cáo và cò</li></a>
+            <a href="#truyen3"><li>Tổng hợp truyện thiếu nhi hay nhất: Thỏ hồng chảnh chọe</li></a>
+        </ul>
+    </div>
+    <br>
+    <div class="content-text">
+        <h1 id="truyen0"><b>Sư tử và chú chuột nhắt</b></h1>
+        <a href=""><img src="./img/sutu.jpg" alt=""></a>
+        <p>Sư tử đang ngủ. Chuột chạy qua trên người sư tử làm nó chòang tỉnh và tóm được chuột. Chuột lên tiếng van xin sư tử tha mạng.</p>
+        <p>Chuột nói:</p>
+        <p>- Nếu ông thả cháu ra, cháu sẽ làm điều tốt cho ông.</p>
+        <p>Sư tử bật cười vì chuột nhắt hứa sẽ làm điều tốt cho nó, nhưng cũng thả chuột ra.
+
+            Về sau những người thợ săn tóm được sư tử và lấy dây trói sư tử vào thân cây.
+            
+            Chuột nhắt nghe tiếng sư tử gầm, chạy đến cắn đứt dây thừng và nói:</p>
+        <p>- Ông có còn nhớ là khi đó ông cười, ông không nghĩ là chuột nhắt cháu lại có thể làm cho ông một điều tốt nào. Còn bây giờ ông thấy đó, có khi chuột nhắt cũng làm được việc lắm chứ.</p>
+        <h3><b>Bài học rút ra</b></h3>
+        <p>Làm việc tốt thì không bao giờ thiệt.</p>
+        <br>
+        <!--  -->
+        <h1 id="truyen1"><b>Chó sói và cậu bé chăn cừu</b></h1>
+        <a href=""><img src="./img/anhconnit.jpg" alt=""></a>
+        <p>Một ngày nọ có một cậu bé chăn cừu buồn rầu ngồi trên sườn núi nhìn những con cừu của làng. Để làm vui vẻ cho mình, cậu hít một hơi thật sâu rồi la lên, Sói! Sói! có sói đang đưổi bắt cừu!</p>
+        <p>Dân làng chạy ngay lên núi để giúp cậu bé đuổi chó sói. Nhưng khi họ đến đỉnh núi thì không thấy con chó sói nào hết. Cậu bé nhìn những khuôn mặt đang giận dữ của dân làng và cười.
+            Người dân liền bảo với cậu bé "này cậu bé chăn cừu, đừng hô sói khi không có chó sói". Rồi họ tức giận bỏ xuống núi.</p>
+        <p>Hôm sau cậu bé lại la toáng lên "Sói! Sói! Có sói đang đuổi bắt cừu!" Vì sự vui sướng nghịch ngợm của mình, cậu bé lại thấy người dân chạy lên núi để giúp cậu đánh đuổi sói.</p>
+        <p>Nhưng khi người dân không thấy chó sói đâu họ liền nghiêm nghị nói với cậu bé "hãy giành bài ca đáng sợ của cậu cho khi nào có việc xấu thực sự! Đừng hô sói khi không có chó sói!"</p>
+        <p>Nhưng cậu bé chỉ nhe răng cười nhìn họ tức giận xuống núi một lần nữa.</p>
+        <p>Về sau khi cậu bé nhìn thấy một con sói thực sự đang rình mò đàn cừu của cậu. Rất hoảng sợ, cậu bé vắt chân lên chạy đi dùng hết sức gọi toáng lên "Sói! Sói!"</p>
+        <p>Nhưng dân làng nghĩ rằng cậu bé lại lừa họ nên không ai chạy lên núi.</p>
+        <p>Hoàng hôn xuống, mọi người tự hỏi tại sao không thấy cậu bé và đàn cừu trở về. Họ liền leo lên đồi để tìm cậu bé và họ thấy cậu đang vừa khóc vừa nói.</p>
+        <h3><b>Bài học rút ra:</b></h3>
+        <p>Khi chúng ta làm sai một điều gì đó, hiển nhiên chúng ta phải bị trừng phạt. Một kẻ nói dối, sẽ ko phải là người xấu nếu hắn biết làm lại.</p>
+        <p>Và khi đó, điều hắn ta cần, chính là một cơ hội!</p>
+        <!--  -->
+        <h1 id="truyen2"><b>Cáo và cò</b></h1>
+        <a href=""><img src="./img/caoco.jpg" alt=""></a>
+        <p>Trong 1 lần, con cáo và con cò đã có cuộc ghé thăm nhau và chúng dường như rất thân với nhau. Rồi con cáo cũng đã mời cò ăn tối và có một trò đùa nhỏ trước mặt cò là cho súp vào một cái chén cạn .</p>
+        <p>Con cáo rất dễ dàng để hớp thức ăn , nhưng con cò thì chỉ có thể chấm ướt phần đầu của cái miệng dài và cuối cùng thức ăn vẫn còn còn nguyên như lúc cò mới bắt đầu ăn.</p>
+        <p>Rồi một ngày được định sẵn cáo sẽ tới thăm cò, nhưng khi họ ngồi xuống bàn thì tất cả đồ ăn cho buổi tối của họ như được đựng trong một cái lọ có cổ rất dài với miệng hẹp.</p>
+        <p>Nhưng khi người dân không thấy chó sói đâu họ liền nghiêm nghị nói với cậu bé "hãy giành bài ca đáng sợ của cậu cho khi nào có việc xấu thực sự! Đừng hô sói khi không có chó sói!"</p>
+        <p>Nhưng cậu bé chỉ nhe răng cười nhìn họ tức giận xuống núi một lần nữa.</p>
+        <p>Về sau khi cậu bé nhìn thấy một con sói thực sự đang rình mò đàn cừu của cậu. Rất hoảng sợ, cậu bé vắt chân lên chạy đi dùng hết sức gọi toáng lên "Sói! Sói!"</p>
+        <p>Nhưng dân làng nghĩ rằng cậu bé lại lừa họ nên không ai chạy lên núi.</p>
+        <p>Hoàng hôn xuống, mọi người tự hỏi tại sao không thấy cậu bé và đàn cừu trở về. Họ liền leo lên đồi để tìm cậu bé và họ thấy cậu đang vừa khóc vừa nói.</p>
+        <h3><b>Bài học rút ra</b></h3>
+        <p>Làm điều xấu với người khác thì ắt sẽ nhận lại được chính điều đó.</p>
+        <!--  -->
+        <h1 id="truyen3"><b>Tổng hợp truyện thiếu nhi hay nhất: Thỏ hồng chảnh chọe</b></h1>
+        <a href=""><img src="./img/tho.jpg" alt=""></a>
+        <p>Xưa thật xưa, trên hòn đảo nọ có rất nhiều động vật, chim chóc sinh sống, trong đó có gia đình nhà Thỏ Hồng. Khi Thỏ Hồng đến tuổi đi học, mẹ sắm cho Thỏ Hồng một chiếc cặp màu vàng thật xinh. Mỗi ngày, Thỏ Hồng phải băng qua một con suối nhỏ để đến trường. Thỏ Hồng rất xinh xắn, nhưng lại không hòa đồng chút nào. Nó tự đặt ra quy định là chỉ những bạn có cặp đẹp mới được chơi chung với nó. Cả lớp chỉ có Nhím Bông và Mèo Vàng có cặp đẹp nên được kết bạn với Thỏ Hồng.</p>
+        <p>Sau kỳ nghỉ hè, lớp học của Thỏ Hồng có thêm bạn Khỉ Nâu. Vui tính và nhiệt tình, Khỉ Nâu nhanh chóng kết bạn với mọi người. Mấy lần thấy nhóm Thỏ Hồng chơi đùa, Khỉ Nâu mon men đến xin chơi cùng, nhưng đáp lại chỉ là những cái lắc đầu:</p>
+        <p>Rồi một ngày được định sẵn cáo sẽ tới thăm cò, nhưng khi họ ngồi xuống bàn thì tất cả đồ ăn cho buổi tối của họ như được đựng trong một cái lọ có cổ rất dài với miệng hẹp.</p>
+        <p>Nhưng khi người dân không thấy chó sói đâu họ liền nghiêm nghị nói với cậu bé "hãy giành bài ca đáng sợ của cậu cho khi nào có việc xấu thực sự! Đừng hô sói khi không có chó sói!"</p>
+        <p>Nhưng cậu bé chỉ nhe răng cười nhìn họ tức giận xuống núi một lần nữa.</p>
+        <p>Về sau khi cậu bé nhìn thấy một con sói thực sự đang rình mò đàn cừu của cậu. Rất hoảng sợ, cậu bé vắt chân lên chạy đi dùng hết sức gọi toáng lên "Sói! Sói!"</p>
+        <p>Nhưng dân làng nghĩ rằng cậu bé lại lừa họ nên không ai chạy lên núi.</p>
+        <p>Hoàng hôn xuống, mọi người tự hỏi tại sao không thấy cậu bé và đàn cừu trở về. Họ liền leo lên đồi để tìm cậu bé và họ thấy cậu đang vừa khóc vừa nói.</p>
+        <h3><b>Bài học rút ra</b></h3>
+        <p>Làm điều xấu với người khác thì ắt sẽ nhận lại được chính điều đó.</p>
+    </div>
+</body>
+</html>
