@@ -33,9 +33,11 @@
         background-color: black;
         position: absolute;
         top: 95px;
-        right: 3px;
+        right: 2px;
         border-top-right-radius:20px;
         border-bottom-right-radius:20px;
+        animation: kimphut 60s infinite linear;
+        transform-origin: center left;
     }
     .clock::before{
         content: "*********";
@@ -43,14 +45,28 @@
         height: 10px;
         background-color: black;
         position: absolute;
-        top: 55px;
-        left: 72px;
-        transform: rotate(100deg);
+        top: 92px;
+        left: 31px;
+        /* transform: rotate(100deg); */
         /* z-index: 999; */
         border-top-left-radius:10px;
         border-bottom-left-radius:10px;
-        
+        animation: kimgiay 60s infinite linear;
+        transform-origin: center right;
     }
+
+@keyframes kimgiay{
+    100%{
+        transform: rotate(360deg);
+       
+    }
+}
+
+@keyframes kimphut{
+    100%{
+        transform: rotate(360deg);
+    }
+}
     
 </style>
 <body>
@@ -58,4 +74,5 @@
         <div class="poice"></div>
     </div>
 </body>
+<div class="ok"></div>
 </html>
