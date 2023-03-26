@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical menu</title>
+</head>
+<style>
+    body{
+        position: relative;
+    }
+        nav{
+            margin: 50px 40%;
+            
+        }
+
+        nav ul{
+            list-style: none;
+        }
+
+        nav ul a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            display: inline-block;
+            padding: 10px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul li{
+            background-color: black;
+        }
+
+        .menu-two{
+            position: absolute;
+            left: 870px;
+            top: 1px;
+            display: none;
+        }
+
+        .menu-one li{
+            border-bottom: 1px solid #737373;
+        }
+
+        .menu-one li:hover{
+            background-color: rgb(240, 105, 105);
+        }
+
+       .menu-one li:hover ul.menu-two{
+            display: block;
+       }
+
+</style>
+<body>
+    <nav>
+        <ul class="menu-one">
+            <li><a href="">Manchester United</a>
+                <ul class="menu-two">
+                    <li><a href="">Devid de Gea</a></li>
+                    <li><a href="">Harry Maguire (lead)</a></li>
+                    <li><a href="">Cristiano Ronaldo</a></li>
+                    <li><a href="">Marcus Rashforh</a></li>
+                    <li><a href="">Marcus Rashforh</a></li>
+                </ul>
+            </li>
+            <li><a href="">Manchester City</a></li>
+            <li><a href="">Arsenal F.C</a></li>
+            <li><a href="">Chelsea F.C</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
