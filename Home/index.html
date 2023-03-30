@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>chuyển đổi tiền tệ</title>
+</head>
+<body>
+    <label for="text">nhập số tiền vào đây</label>
+    <input type="text" id="dauvao">
+    <label for="text">chọn tiền tệ</label>
+    <select name="" id="section1">
+        <option value="a">VN</option>
+        <OPtion value="b">USE</OPtion>
+    </select>
+    <label for="text">chọn tiền tệ</label>
+    <select name="" id="section2">
+        <option value="a">VN</option>
+        <OPtion value="b">USE</OPtion>
+    </select>
+    <button type="button" onclick="chuyendoi()">Quy Đổi</button>
+    <!-- <label for="text" id="ketquaquydoi">số tiền quy đổi</label> -->
+</body>
+<script>
+    function chuyendoi(){
+        let giatrivao = document.getElementById("dauvao").value;
+        let section1 = document.getElementById("section1").value;
+        let section2 = document.getElementById("section2").value;
+        // let ketquaquydoi = document.getElementById("ketquaquydoi").innerHTML;
+        if(section1 == section2){
+            alert(giatrivao);
+        }
+        if(section1 == 'a' && section2 == 'b'){
+            alert(giatrivao*2400);
+        }
+    }
+</script>
+</html>
