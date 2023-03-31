@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/baitap.css">
+    <title>form</title>
+</head>
+<body>
+    <article>
+        <form id="form" method= "get" action="" enctype="multipart/form-data">
+            <label for="">first name</label>
+            <input type="text" name="name" id="first" value="first">
+            <label for="">last name</label>
+            <input type="text" name="name" id="last" value="last">
+            <div id="fullName" value=""></div>
+            <label for="">Where are you ?</label>
+            <input type="text" name="Where" id="Address" value="Address">
+             <label for="">Street Address</label>
+            <input type="text" name="Where-two" id="Address1" value="Address">
+            <label for="">Address line 2</label>
+            <input type="text" name="city" id="city" value="city">
+            <label for="">City</label>
+            <input type="text" name="State" id="State" value="State">
+            <label for="">State/Region/Province</label>
+            <input type="text" name="State" id="State" value="State">
+            <label for="">Postal/Zip code</label>
+            <input type="text" name="zip code" id="zip" value="zip">
+            <select name="country" id="country">
+                <option value="VN">VIỆT NAM</option>
+                <option value="US">MỸ</option>
+                <option value="CN">CHINA</option>
+                <option value="FR">FRANCE</option>
+            </select>
+            <label for="">Country</label>
+            <br>
+            <label for="">What's the prrogress status ?</label>
+            <br>
+            <input type="range" name="prrogress" id="prrogress" value="prrogress" onchange="change()">
+            <br> 
+            <label for="">Do you nế any more materials ?</label>
+            <br>
+            <div class="radio">
+                <input type="radio" id="yes" value="yes" name="chon">
+                <label for="">Yes</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="no" value="no" name="chon">
+                <label for="">No</label>
+            </div>
+            <br>
+            <label for="">Do you anymore materials ?</label>
+            <br>
+            <div >
+                <input class="checkbox" type="checkbox"  name="chonbox" value="sand"> 
+                <label for="">sand</label>
+            </div>
+            <div>
+                 <input class="checkbox" type="checkbox"  name="chonbox" value="bricks">
+                <label for="">bricks</label>
+            </div>
+            <div>
+                <input class="checkbox" type="checkbox"  name="chonbox" value="rods">
+                <label for="">rods</label>
+            </div>
+            <div>
+                <input class="checkbox" type="checkbox"  name="chonbox" value="other">
+                <label for="">other</label>
+            </div>
+            <br>
+            <label for="text">Any other comments ?</label>
+            <br>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <br>
+            <button onclick="clickme()" type="button" name="submit" id="submit">click me</button>
+        </form>
+
+    </article>
+    <script src="/Class/script/baitap.js"></script>
+</body>
+</html>

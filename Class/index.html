@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        border: 1px solid #2bff36;
+        padding: 20px;
+    }
+    td{
+       min-width: 150px;
+       margin-left: 10px;
+    }
+    select{
+        width: 100%;
+    }
+
+    #result{
+        width: 500px;
+        padding: 20px;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <section>
+        <h3>Bài 1</h3>
+        <Button onclick="bai_1()" ><a href=""></a>Tính điểm trung bình</Button>
+        <Button onclick="bai_2()"><a href=""></a>Đổi nhiệt độ</Button>
+        <Button onclick="bai_3()"><a href=""></a>tính diện tích hình tròn</Button>
+        <Button onclick="bai_4()"><a href=""></a>Tính chu vi hình tròn</Button>
+    </section>
+    <section>
+        <h3>Bài 2</h3>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+            </tr>
+            <tr>
+                <td><input type="number" name="amount" id="amount"></td>
+                <td>
+                    <select id="currency" onchange="onChange()">
+                        <option value="VND" selected>VNĐ</option>
+                        <option value="USD" >USD</option>
+                    </select></td>
+                <td><input type="text" disabled id="to-currency" value="USD"></td>
+                <td><button onclick="convertCurrency()">Convert</button></td>
+            </tr>
+        </table>
+        <br>
+        <input type="text" id="result" disabled placeholder="nhận kết quả sau khi convert">
+    </section>
+</body>
+<script src="script/script.js"></script>
+</html>
