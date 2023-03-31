@@ -1,7 +1,5 @@
-// khai báo function
-const checkbox = document.getElementsByClassName('checkbox');
-var result = "";
 
+// khai báo function
 function clickme(){
     // khai báo để lấy giá trị tên và họ
     let first = document.getElementById("first");
@@ -10,6 +8,11 @@ function clickme(){
     // khai báo lấy value chon
     let chon = document.getElementById('form').elements["chon"];
 
+
+    
+    // khai báo lấy class name checkbox
+    const checkbox = document.getElementsByClassName('checkbox');
+    var result = "";
   
 
     // nối tên
@@ -33,7 +36,7 @@ for (let index = 0; index < checkbox.length; index++) {
 console.log(result);
 
  }
-// khai báo function lấy giá trị renge
+// khai báo function lấy giá trị renge khi kéo
 function change(){
 
     const prrogress = document.getElementById('prrogress').value;
