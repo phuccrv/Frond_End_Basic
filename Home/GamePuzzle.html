@@ -52,9 +52,9 @@
       let x = 1;
 
       //   Kiểm tra các ảnh bằng nhau ==> show ra kết quả
-      let imgHead = 1;
-      let imgBody = 2;
-      let imgFoot = 3;
+      // let imgHead = 1;
+      // let imgBody = 2;
+      // let imgFoot = 3;
 
       //   tham số truyền vào element để xác định thẻ nào đang được click
       function changeImage(element) {
@@ -69,30 +69,30 @@
         }
 
         // Lưu số thứ tự ảnh của các phần
-        if (classImg == "img-head") {
-          imgHead = x;
-        } else if (classImg == "img-body") {
-          imgBody = x;
-        } else {
-          imgFoot = x;
-        }
+        // if (classImg == "img-head") {
+        //   imgHead = x;
+        // } else if (classImg == "img-body") {
+        //   imgBody = x;
+        // } else {
+        //   imgFoot = x;
+        // }
 
         // Gán ảnh được click vào url
-        img.style.backgroundImage = ` url(./images/image-${x}.jpg)`;
+        img.style.backgroundImage = `url(./images/image-${x}.jpg)`;
 
         // Hiển thị kết quả đúng
-        const result = document.querySelector(".result");
-        const showPhoto = document.querySelector(".show-photo");
+        // const result = document.querySelector(".result");
+        // const showPhoto = document.querySelector(".show-photo");
 
-        // Check điều kiện các phần với nhau
-        if (imgHead == imgBody && imgHead == imgFoot) {
-          result.style.display = "block";
-          showPhoto.style.backgroundImage = ` url(./images/image-${x}.jpg)`;
-          showPhoto.style.display = "block";
-        } else {
-          result.style.display = "none";
-          showPhoto.style.display = "none";
-        }
+        // // Check điều kiện các phần với nhau
+        // if (imgHead == imgBody && imgHead == imgFoot) {
+        //   result.style.display = "block";
+        //   showPhoto.style.backgroundImage = ` url(./images/image-${x}.jpg)`;
+        //   showPhoto.style.display = "block";
+        // } else {
+        //   result.style.display = "none";
+        //   showPhoto.style.display = "none";
+        // }
       }
     </script>
   </body>
